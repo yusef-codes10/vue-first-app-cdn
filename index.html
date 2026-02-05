@@ -27,6 +27,14 @@
     <script>
         // define the name in our JS here
         const {createApp, ref} = Vue
+        // this is our Vue app instance
+        createApp({
+            // this function runs when the app loads
+            setup() {
+                const name = ref("Yusef")
+                return {name}
+            }
+        }).mount("#app")
     </script>
   </body>
 </html>
